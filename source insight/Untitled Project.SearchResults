@@ -1,0 +1,9 @@
+---- Length Matches (10 in 1 files) ----
+Main.c:uint16_t Length; //单位mm
+Main.c:			Length = Cali(ADLinearVal);
+Main.c:				UartSendBuf[2] = (uint8_t)(Length >> 8);
+Main.c:				UartSendBuf[3] = (uint8_t)Length;
+Main.c:		//上电1s 以后就一直发送调试数据(每200ms 发一次)，包含AD,ADLiner,Length
+Main.c:				printf("AD: %d ADLinear: %d Length: %d mm\r\n",ADC_Value,ADLinearVal,Length);
+Main.c:            //printf("The Length is 38.5cm\r\n");
+Main.c:			//printf("AD: %d ADLinear: %d Length: %d mm\r\n",ADC_Value,ADLinearVal,Length);

@@ -1,0 +1,1469 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\InchNode.X.production.obj
+text2 CODE 0 27 27 1A8 2
+text47 CODE 0 801 801 7FF 2
+text51 CODE 0 28E 28E E 2
+text52 CODE 0 29C 29C A 2
+text53 CODE 0 2AC 2AC 1 2
+text54 CODE 0 262 262 16 2
+text55 CODE 0 278 278 16 2
+nvBANK0 BANK0 1 67 67 4 1
+cstackCOMMON COMMON 1 70 70 E 1
+cstackBANK0 BANK0 1 4A 4A 1D 1
+intentry CODE 0 4 4 21 2
+bssBANK0 BANK0 1 20 20 2A 1
+bssBANK1 BANK1 1 A0 A0 50 1
+bssBANK2 BANK2 1 120 120 4C 1
+stringtext STRCODE 0 1CF 1CF 93 2
+clrtext CODE 0 2A6 2A6 6 2
+$C:\Users\Thinkpad\AppData\Local\Temp\sgj0.obj
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 25 25 2 2
+config CONFIG 0 8007 8007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 6B-6F 1
+RAM 16C-16F 1
+BANK0 6B-6F 1
+BANK2 16C-16F 1
+CONST 2-3 2
+CONST 2AD-800 2
+ENTRY 2-3 2
+ENTRY 2AD-800 2
+IDLOC 8000-8003 2
+SFR10 500-56F 1
+SFR11 580-5EF 1
+SFR12 600-66F 1
+SFR13 680-6EF 1
+SFR14 700-76F 1
+SFR15 780-7EF 1
+SFR16 800-86F 1
+SFR17 880-8EF 1
+SFR18 900-96F 1
+SFR19 980-9EF 1
+SFR20 A00-A6F 1
+SFR21 A80-AEF 1
+SFR22 B00-B6F 1
+SFR23 B80-BEF 1
+SFR24 C00-C6F 1
+SFR25 C80-CEF 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+STACK 204B-204F 1
+CODE 2-3 2
+CODE 2AD-800 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-1EF 1
+SFR4 200-26F 1
+SFR5 280-2EF 1
+SFR6 300-36F 1
+SFR7 380-3EF 1
+SFR8 400-46F 1
+SFR9 480-4EF 1
+BIGRAM 2000-20EF 1
+EEDATA F000-F0FF 2
+STRCODE 2-3 2
+STRCODE 2AD-800 2
+STRING 2-3 2
+STRING 2AD-800 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\InchNode.X.production.obj
+4 intentry CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lldiv.c
+4 intentry CODE >51:E:\InchNode\InchNode.X\mcc_generated_files/interrupt_manager.c
+6 intentry CODE >54:E:\InchNode\InchNode.X\mcc_generated_files/interrupt_manager.c
+9 intentry CODE >56:E:\InchNode\InchNode.X\mcc_generated_files/interrupt_manager.c
+C intentry CODE >57:E:\InchNode\InchNode.X\mcc_generated_files/interrupt_manager.c
+D intentry CODE >58:E:\InchNode\InchNode.X\mcc_generated_files/interrupt_manager.c
+15 intentry CODE >60:E:\InchNode\InchNode.X\mcc_generated_files/interrupt_manager.c
+18 intentry CODE >61:E:\InchNode\InchNode.X\mcc_generated_files/interrupt_manager.c
+19 intentry CODE >62:E:\InchNode\InchNode.X\mcc_generated_files/interrupt_manager.c
+21 intentry CODE >64:E:\InchNode\InchNode.X\mcc_generated_files/interrupt_manager.c
+23 intentry CODE >70:E:\InchNode\InchNode.X\mcc_generated_files/interrupt_manager.c
+278 text55 CODE >184:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+278 text55 CODE >187:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+27B text55 CODE >191:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+27C text55 CODE >192:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+27D text55 CODE >196:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+287 text55 CODE >197:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+288 text55 CODE >196:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+289 text55 CODE >197:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+28B text55 CODE >199:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+28C text55 CODE >201:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+28D text55 CODE >202:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+262 text54 CODE >165:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+262 text54 CODE >169:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+266 text54 CODE >171:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+26E text54 CODE >172:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+26F text54 CODE >171:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+270 text54 CODE >172:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+272 text54 CODE >174:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+273 text54 CODE >176:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+274 text54 CODE >177:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+275 text54 CODE >178:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+275 text54 CODE >180:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+277 text54 CODE >182:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+2AC text53 CODE >130:E:\InchNode\InchNode.X\mcc_generated_files/tmr0.c
+2AC text53 CODE >133:E:\InchNode\InchNode.X\mcc_generated_files/tmr0.c
+29C text52 CODE >627:E:\InchNode\InchNode.X\main.c
+29C text52 CODE >629:E:\InchNode\InchNode.X\main.c
+29F text52 CODE >630:E:\InchNode\InchNode.X\main.c
+2A2 text52 CODE >631:E:\InchNode\InchNode.X\main.c
+2A5 text52 CODE >632:E:\InchNode\InchNode.X\main.c
+28E text51 CODE >109:E:\InchNode\InchNode.X\mcc_generated_files/tmr0.c
+28E text51 CODE >113:E:\InchNode\InchNode.X\mcc_generated_files/tmr0.c
+28F text51 CODE >115:E:\InchNode\InchNode.X\mcc_generated_files/tmr0.c
+292 text51 CODE >117:E:\InchNode\InchNode.X\mcc_generated_files/tmr0.c
+296 text51 CODE >119:E:\InchNode\InchNode.X\mcc_generated_files/tmr0.c
+29B text51 CODE >123:E:\InchNode\InchNode.X\mcc_generated_files/tmr0.c
+801 text47 CODE >148:E:\InchNode\InchNode.X\main.c
+802 text47 CODE >155:E:\InchNode\InchNode.X\main.c
+80B text47 CODE >157:E:\InchNode\InchNode.X\main.c
+82F text47 CODE >159:E:\InchNode\InchNode.X\main.c
+83F text47 CODE >161:E:\InchNode\InchNode.X\main.c
+851 text47 CODE >163:E:\InchNode\InchNode.X\main.c
+89C text47 CODE >159:E:\InchNode\InchNode.X\main.c
+89E text47 CODE >167:E:\InchNode\InchNode.X\main.c
+8A9 text47 CODE >169:E:\InchNode\InchNode.X\main.c
+8B0 text47 CODE >172:E:\InchNode\InchNode.X\main.c
+8B4 text47 CODE >174:E:\InchNode\InchNode.X\main.c
+8B5 text47 CODE >2102:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+8B5 text47 CODE >2105:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+8B5 text47 CODE >2222:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+8B6 text47 CODE >2223:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+8B7 text47 CODE >2224:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+8B8 text47 CODE >2225:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+8B9 text47 CODE >2226:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+8BA text47 CODE >2227:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+8BD text47 CODE >2231:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+8BE text47 CODE >2232:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+8BF text47 CODE >2233:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+8C0 text47 CODE >2234:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+8C1 text47 CODE >2235:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+8C2 text47 CODE >2236:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+8C5 text47 CODE >2240:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+8C6 text47 CODE >2241:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+8C7 text47 CODE >2242:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+8C8 text47 CODE >2243:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+8C9 text47 CODE >2244:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+8CA text47 CODE >2245:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+8CD text47 CODE >2251:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+8CD text47 CODE >2253:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+8CE text47 CODE >2254:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+8CF text47 CODE >2255:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+8D0 text47 CODE >634:E:\InchNode\InchNode.X\main.c
+8D0 text47 CODE >639:E:\InchNode\InchNode.X\main.c
+8D2 text47 CODE >645:E:\InchNode\InchNode.X\main.c
+8D3 text47 CODE >648:E:\InchNode\InchNode.X\main.c
+8D4 text47 CODE >656:E:\InchNode\InchNode.X\main.c
+8D9 text47 CODE >658:E:\InchNode\InchNode.X\main.c
+8DC text47 CODE >662:E:\InchNode\InchNode.X\main.c
+8E3 text47 CODE >664:E:\InchNode\InchNode.X\main.c
+8E5 text47 CODE >672:E:\InchNode\InchNode.X\main.c
+8E8 text47 CODE >673:E:\InchNode\InchNode.X\main.c
+8EA text47 CODE >674:E:\InchNode\InchNode.X\main.c
+8EC text47 CODE >675:E:\InchNode\InchNode.X\main.c
+8EE text47 CODE >676:E:\InchNode\InchNode.X\main.c
+8F1 text47 CODE >428:E:\InchNode\InchNode.X\main.c
+8F1 text47 CODE >431:E:\InchNode\InchNode.X\main.c
+8F2 text47 CODE >435:E:\InchNode\InchNode.X\main.c
+8F3 text47 CODE >436:E:\InchNode\InchNode.X\main.c
+8F5 text47 CODE >437:E:\InchNode\InchNode.X\main.c
+8F6 text47 CODE >440:E:\InchNode\InchNode.X\main.c
+8F7 text47 CODE >441:E:\InchNode\InchNode.X\main.c
+8FA text47 CODE >442:E:\InchNode\InchNode.X\main.c
+8FC text47 CODE >443:E:\InchNode\InchNode.X\main.c
+8FD text47 CODE >446:E:\InchNode\InchNode.X\main.c
+904 text47 CODE >449:E:\InchNode\InchNode.X\main.c
+907 text47 CODE >454:E:\InchNode\InchNode.X\main.c
+90D text47 CODE >456:E:\InchNode\InchNode.X\main.c
+918 text47 CODE >458:E:\InchNode\InchNode.X\main.c
+91B text47 CODE >460:E:\InchNode\InchNode.X\main.c
+925 text47 CODE >461:E:\InchNode\InchNode.X\main.c
+926 text47 CODE >464:E:\InchNode\InchNode.X\main.c
+931 text47 CODE >471:E:\InchNode\InchNode.X\main.c
+932 text47 CODE >472:E:\InchNode\InchNode.X\main.c
+933 text47 CODE >431:E:\InchNode\InchNode.X\main.c
+941 text47 CODE >474:E:\InchNode\InchNode.X\main.c
+942 text47 CODE >389:E:\InchNode\InchNode.X\main.c
+942 text47 CODE >392:E:\InchNode\InchNode.X\main.c
+945 text47 CODE >397:E:\InchNode\InchNode.X\main.c
+947 text47 CODE >400:E:\InchNode\InchNode.X\main.c
+968 text47 CODE >405:E:\InchNode\InchNode.X\main.c
+974 text47 CODE >407:E:\InchNode\InchNode.X\main.c
+975 text47 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\Umul32.c
+975 text47 CODE >119:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\Umul32.c
+979 text47 CODE >120:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\Umul32.c
+979 text47 CODE >121:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\Umul32.c
+97B text47 CODE >122:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\Umul32.c
+983 text47 CODE >123:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\Umul32.c
+987 text47 CODE >124:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\Umul32.c
+98B text47 CODE >125:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\Umul32.c
+991 text47 CODE >128:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\Umul32.c
+999 text47 CODE >129:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\Umul32.c
+99A text47 CODE >411:E:\InchNode\InchNode.X\main.c
+99A text47 CODE >415:E:\InchNode\InchNode.X\main.c
+9A5 text47 CODE >416:E:\InchNode\InchNode.X\main.c
+9A8 text47 CODE >419:E:\InchNode\InchNode.X\main.c
+9C0 text47 CODE >420:E:\InchNode\InchNode.X\main.c
+9E8 text47 CODE >424:E:\InchNode\InchNode.X\main.c
+9EC text47 CODE >426:E:\InchNode\InchNode.X\main.c
+9ED text47 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lldiv.c
+9ED text47 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lldiv.c
+9F1 text47 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lldiv.c
+9F7 text47 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lldiv.c
+9F8 text47 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lldiv.c
+9F8 text47 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lldiv.c
+9F9 text47 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lldiv.c
+9FB text47 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lldiv.c
+9FF text47 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lldiv.c
+A00 text47 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lldiv.c
+A04 text47 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lldiv.c
+A14 text47 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lldiv.c
+A1C text47 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lldiv.c
+A1D text47 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lldiv.c
+A21 text47 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lldiv.c
+A23 text47 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lldiv.c
+A2B text47 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lldiv.c
+A2C text47 CODE >226:E:\InchNode\InchNode.X\main.c
+A2C text47 CODE >232:E:\InchNode\InchNode.X\main.c
+A30 text47 CODE >235:E:\InchNode\InchNode.X\main.c
+A40 text47 CODE >241:E:\InchNode\InchNode.X\main.c
+A4E text47 CODE >251:E:\InchNode\InchNode.X\main.c
+A59 text47 CODE >252:E:\InchNode\InchNode.X\main.c
+A5D text47 CODE >253:E:\InchNode\InchNode.X\main.c
+A5F text47 CODE >256:E:\InchNode\InchNode.X\main.c
+A61 text47 CODE >258:E:\InchNode\InchNode.X\main.c
+A67 text47 CODE >263:E:\InchNode\InchNode.X\main.c
+A68 text47 CODE >265:E:\InchNode\InchNode.X\main.c
+A6F text47 CODE >268:E:\InchNode\InchNode.X\main.c
+A9E text47 CODE >272:E:\InchNode\InchNode.X\main.c
+AB4 text47 CODE >276:E:\InchNode\InchNode.X\main.c
+AB5 text47 CODE >278:E:\InchNode\InchNode.X\main.c
+ABE text47 CODE >279:E:\InchNode\InchNode.X\main.c
+AC6 text47 CODE >276:E:\InchNode\InchNode.X\main.c
+ACB text47 CODE >282:E:\InchNode\InchNode.X\main.c
+AD2 text47 CODE >265:E:\InchNode\InchNode.X\main.c
+AD4 text47 CODE >263:E:\InchNode\InchNode.X\main.c
+AD9 text47 CODE >290:E:\InchNode\InchNode.X\main.c
+ADB text47 CODE >291:E:\InchNode\InchNode.X\main.c
+ADC text47 CODE >293:E:\InchNode\InchNode.X\main.c
+AE6 text47 CODE >294:E:\InchNode\InchNode.X\main.c
+AE9 text47 CODE >295:E:\InchNode\InchNode.X\main.c
+AF2 text47 CODE >296:E:\InchNode\InchNode.X\main.c
+AF5 text47 CODE >299:E:\InchNode\InchNode.X\main.c
+AFF text47 CODE >291:E:\InchNode\InchNode.X\main.c
+B05 text47 CODE >124:E:\InchNode\InchNode.X\main.c
+B06 text47 CODE >128:E:\InchNode\InchNode.X\main.c
+B12 text47 CODE >130:E:\InchNode\InchNode.X\main.c
+B1D text47 CODE >128:E:\InchNode\InchNode.X\main.c
+B1F text47 CODE >207:E:\InchNode\InchNode.X\main.c
+B1F text47 CODE >211:E:\InchNode\InchNode.X\main.c
+B20 text47 CODE >213:E:\InchNode\InchNode.X\main.c
+B25 text47 CODE >211:E:\InchNode\InchNode.X\main.c
+B2B text47 CODE >126:E:\InchNode\InchNode.X\mcc_generated_files/tmr0.c
+B2B text47 CODE >127:E:\InchNode\InchNode.X\mcc_generated_files/tmr0.c
+B30 text47 CODE >128:E:\InchNode\InchNode.X\mcc_generated_files/tmr0.c
+B31 text47 CODE >360:E:\InchNode\InchNode.X\main.c
+B31 text47 CODE >364:E:\InchNode\InchNode.X\main.c
+B34 text47 CODE >366:E:\InchNode\InchNode.X\main.c
+B35 text47 CODE >367:E:\InchNode\InchNode.X\main.c
+B37 text47 CODE >369:E:\InchNode\InchNode.X\main.c
+B3E text47 CODE >371:E:\InchNode\InchNode.X\main.c
+B3F text47 CODE >373:E:\InchNode\InchNode.X\main.c
+B71 text47 CODE >371:E:\InchNode\InchNode.X\main.c
+B77 text47 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\Umul16.c
+B77 text47 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\Umul16.c
+B79 text47 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\Umul16.c
+B7B text47 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\Umul16.c
+B7F text47 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\Umul16.c
+B81 text47 CODE >48:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\Umul16.c
+B83 text47 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\Umul16.c
+B87 text47 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\Umul16.c
+B8B text47 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\Umul16.c
+B8C text47 CODE >464:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+B8C text47 CODE >533:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+B8E text47 CODE >536:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+B94 text47 CODE >538:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+B97 text47 CODE >541:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+B9A text47 CODE >542:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+B9B text47 CODE >546:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+B9D text47 CODE >548:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+B9E text47 CODE >597:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+BA4 text47 CODE >598:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+BA6 text47 CODE >600:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+BB5 text47 CODE >601:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+BC4 text47 CODE >602:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+BC8 text47 CODE >635:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+BD4 text47 CODE >1259:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+BDD text47 CODE >1261:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+BDF text47 CODE >1262:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+BE1 text47 CODE >1263:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+BE6 text47 CODE >1305:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+BE8 text47 CODE >1306:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+BF5 text47 CODE >1305:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+BFA text47 CODE >1345:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+C02 text47 CODE >1346:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+C06 text47 CODE >1381:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+C17 text47 CODE >1382:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+C21 text47 CODE >1384:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+C24 text47 CODE >1428:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+C28 text47 CODE >1430:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+C2B text47 CODE >1431:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+C34 text47 CODE >1438:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+C38 text47 CODE >1439:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+C3B text47 CODE >1472:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+C3E text47 CODE >1474:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+C3F text47 CODE >1489:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+C57 text47 CODE >1524:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+C59 text47 CODE >1474:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+C5D text47 CODE >536:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+C5E text47 CODE >1541:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\doprnt.c
+C5F text47 CODE >160:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+C60 text47 CODE >162:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+C61 text47 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\isdigit.c
+C62 text47 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\isdigit.c
+C6E text47 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\isdigit.c
+C6F text47 CODE >185:E:\InchNode\InchNode.X\main.c
+C6F text47 CODE >190:E:\InchNode\InchNode.X\main.c
+C70 text47 CODE >192:E:\InchNode\InchNode.X\main.c
+C7A text47 CODE >193:E:\InchNode\InchNode.X\main.c
+C81 text47 CODE >194:E:\InchNode\InchNode.X\main.c
+C8A text47 CODE >190:E:\InchNode\InchNode.X\main.c
+C90 text47 CODE >113:E:\InchNode\InchNode.X\main.c
+C91 text47 CODE >117:E:\InchNode\InchNode.X\main.c
+C9D text47 CODE >119:E:\InchNode\InchNode.X\main.c
+CA7 text47 CODE >117:E:\InchNode\InchNode.X\main.c
+CA9 text47 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\pic\eeread.c
+CAA text47 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\pic\eeread.c
+CAA text47 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\pic\eeread.c
+CAB text47 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\pic\eeread.c
+CAE text47 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\pic\eeread.c
+CBA text47 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\pic\eeread.c
+CBB text47 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwdiv.c
+CBB text47 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwdiv.c
+CBD text47 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwdiv.c
+CC1 text47 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwdiv.c
+CC2 text47 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwdiv.c
+CC2 text47 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwdiv.c
+CC3 text47 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwdiv.c
+CC5 text47 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwdiv.c
+CC7 text47 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwdiv.c
+CC8 text47 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwdiv.c
+CCA text47 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwdiv.c
+CD2 text47 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwdiv.c
+CD6 text47 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwdiv.c
+CD7 text47 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwdiv.c
+CD9 text47 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwdiv.c
+CDB text47 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwdiv.c
+CDF text47 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwdiv.c
+CE0 text47 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwmod.c
+CE0 text47 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwmod.c
+CE4 text47 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwmod.c
+CE5 text47 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwmod.c
+CE5 text47 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwmod.c
+CE6 text47 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwmod.c
+CE8 text47 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwmod.c
+CEA text47 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwmod.c
+CEB text47 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwmod.c
+CF3 text47 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwmod.c
+CF7 text47 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwmod.c
+CF9 text47 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwmod.c
+CFB text47 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwmod.c
+CFF text47 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\lwmod.c
+D00 text47 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\pic\eewrite.c
+D01 text47 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\pic\eewrite.c
+D1B text47 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\pic\eewrite.c
+D1C text47 CODE >464:E:\InchNode\InchNode.X\ads1115.c
+D1C text47 CODE >469:E:\InchNode\InchNode.X\ads1115.c
+D28 text47 CODE >470:E:\InchNode\InchNode.X\ads1115.c
+D2C text47 CODE >472:E:\InchNode\InchNode.X\ads1115.c
+D31 text47 CODE >478:E:\InchNode\InchNode.X\ads1115.c
+D38 text47 CODE >481:E:\InchNode\InchNode.X\ads1115.c
+D3D text47 CODE >110:E:\InchNode\InchNode.X\ads1115.c
+D3D text47 CODE >112:E:\InchNode\InchNode.X\ads1115.c
+D3F text47 CODE >113:E:\InchNode\InchNode.X\ads1115.c
+D41 text47 CODE >114:E:\InchNode\InchNode.X\ads1115.c
+D43 text47 CODE >115:E:\InchNode\InchNode.X\ads1115.c
+D45 text47 CODE >117:E:\InchNode\InchNode.X\ads1115.c
+D47 text47 CODE >118:E:\InchNode\InchNode.X\ads1115.c
+D49 text47 CODE >121:E:\InchNode\InchNode.X\ads1115.c
+D4B text47 CODE >122:E:\InchNode\InchNode.X\ads1115.c
+D50 text47 CODE >124:E:\InchNode\InchNode.X\ads1115.c
+D51 text47 CODE >128:E:\InchNode\InchNode.X\ads1115.c
+D53 text47 CODE >129:E:\InchNode\InchNode.X\ads1115.c
+D55 text47 CODE >130:E:\InchNode\InchNode.X\ads1115.c
+D57 text47 CODE >115:E:\InchNode\InchNode.X\ads1115.c
+D61 text47 CODE >132:E:\InchNode\InchNode.X\ads1115.c
+D63 text47 CODE >134:E:\InchNode\InchNode.X\ads1115.c
+D67 text47 CODE >135:E:\InchNode\InchNode.X\ads1115.c
+D68 text47 CODE >183:E:\InchNode\InchNode.X\ads1115.c
+D68 text47 CODE >187:E:\InchNode\InchNode.X\ads1115.c
+D6A text47 CODE >189:E:\InchNode\InchNode.X\ads1115.c
+D6C text47 CODE >190:E:\InchNode\InchNode.X\ads1115.c
+D6E text47 CODE >191:E:\InchNode\InchNode.X\ads1115.c
+D70 text47 CODE >192:E:\InchNode\InchNode.X\ads1115.c
+D7A text47 CODE >194:E:\InchNode\InchNode.X\ads1115.c
+D82 text47 CODE >196:E:\InchNode\InchNode.X\ads1115.c
+D84 text47 CODE >197:E:\InchNode\InchNode.X\ads1115.c
+D86 text47 CODE >198:E:\InchNode\InchNode.X\ads1115.c
+D88 text47 CODE >199:E:\InchNode\InchNode.X\ads1115.c
+D93 text47 CODE >201:E:\InchNode\InchNode.X\ads1115.c
+D99 text47 CODE >202:E:\InchNode\InchNode.X\ads1115.c
+D9B text47 CODE >204:E:\InchNode\InchNode.X\ads1115.c
+DA2 text47 CODE >205:E:\InchNode\InchNode.X\ads1115.c
+DA4 text47 CODE >207:E:\InchNode\InchNode.X\ads1115.c
+DA5 text47 CODE >187:E:\InchNode\InchNode.X\ads1115.c
+DB0 text47 CODE >209:E:\InchNode\InchNode.X\ads1115.c
+DB2 text47 CODE >210:E:\InchNode\InchNode.X\ads1115.c
+DB3 text47 CODE >212:E:\InchNode\InchNode.X\ads1115.c
+DB8 text47 CODE >213:E:\InchNode\InchNode.X\ads1115.c
+DB9 text47 CODE >156:E:\InchNode\InchNode.X\ads1115.c
+DB9 text47 CODE >160:E:\InchNode\InchNode.X\ads1115.c
+DBB text47 CODE >162:E:\InchNode\InchNode.X\ads1115.c
+DBD text47 CODE >164:E:\InchNode\InchNode.X\ads1115.c
+DBF text47 CODE >165:E:\InchNode\InchNode.X\ads1115.c
+DC1 text47 CODE >166:E:\InchNode\InchNode.X\ads1115.c
+DCC text47 CODE >168:E:\InchNode\InchNode.X\ads1115.c
+DD7 text47 CODE >170:E:\InchNode\InchNode.X\ads1115.c
+DE1 text47 CODE >172:E:\InchNode\InchNode.X\ads1115.c
+DEC text47 CODE >160:E:\InchNode\InchNode.X\ads1115.c
+DF6 text47 CODE >177:E:\InchNode\InchNode.X\ads1115.c
+DF8 text47 CODE >178:E:\InchNode\InchNode.X\ads1115.c
+DF9 text47 CODE >75:E:\InchNode\InchNode.X\ads1115.c
+DF9 text47 CODE >78:E:\InchNode\InchNode.X\ads1115.c
+DFB text47 CODE >79:E:\InchNode\InchNode.X\ads1115.c
+DFB text47 CODE >80:E:\InchNode\InchNode.X\ads1115.c
+DFD text47 CODE >82:E:\InchNode\InchNode.X\ads1115.c
+E00 text47 CODE >86:E:\InchNode\InchNode.X\ads1115.c
+E02 text47 CODE >88:E:\InchNode\InchNode.X\ads1115.c
+E04 text47 CODE >89:E:\InchNode\InchNode.X\ads1115.c
+E06 text47 CODE >90:E:\InchNode\InchNode.X\ads1115.c
+E08 text47 CODE >91:E:\InchNode\InchNode.X\ads1115.c
+E0A text47 CODE >92:E:\InchNode\InchNode.X\ads1115.c
+E0C text47 CODE >78:E:\InchNode\InchNode.X\ads1115.c
+E16 text47 CODE >95:E:\InchNode\InchNode.X\ads1115.c
+E18 text47 CODE >96:E:\InchNode\InchNode.X\ads1115.c
+E1A text47 CODE >97:E:\InchNode\InchNode.X\ads1115.c
+E1C text47 CODE >99:E:\InchNode\InchNode.X\ads1115.c
+E1E text47 CODE >100:E:\InchNode\InchNode.X\ads1115.c
+E24 text47 CODE >101:E:\InchNode\InchNode.X\ads1115.c
+E26 text47 CODE >103:E:\InchNode\InchNode.X\ads1115.c
+E28 text47 CODE >104:E:\InchNode\InchNode.X\ads1115.c
+E29 text47 CODE >105:E:\InchNode\InchNode.X\ads1115.c
+E2B text47 CODE >107:E:\InchNode\InchNode.X\ads1115.c
+E2F text47 CODE >108:E:\InchNode\InchNode.X\ads1115.c
+E30 text47 CODE >30:E:\InchNode\InchNode.X\ads1115.c
+E30 text47 CODE >32:E:\InchNode\InchNode.X\ads1115.c
+E32 text47 CODE >33:E:\InchNode\InchNode.X\ads1115.c
+E33 text47 CODE >63:E:\InchNode\InchNode.X\ads1115.c
+E33 text47 CODE >65:E:\InchNode\InchNode.X\ads1115.c
+E35 text47 CODE >66:E:\InchNode\InchNode.X\ads1115.c
+E37 text47 CODE >67:E:\InchNode\InchNode.X\ads1115.c
+E39 text47 CODE >68:E:\InchNode\InchNode.X\ads1115.c
+E3B text47 CODE >69:E:\InchNode\InchNode.X\ads1115.c
+E3D text47 CODE >70:E:\InchNode\InchNode.X\ads1115.c
+E3F text47 CODE >71:E:\InchNode\InchNode.X\ads1115.c
+E41 text47 CODE >72:E:\InchNode\InchNode.X\ads1115.c
+E42 text47 CODE >48:E:\InchNode\InchNode.X\ads1115.c
+E42 text47 CODE >50:E:\InchNode\InchNode.X\ads1115.c
+E44 text47 CODE >51:E:\InchNode\InchNode.X\ads1115.c
+E45 text47 CODE >52:E:\InchNode\InchNode.X\ads1115.c
+E47 text47 CODE >53:E:\InchNode\InchNode.X\ads1115.c
+E49 text47 CODE >54:E:\InchNode\InchNode.X\ads1115.c
+E4B text47 CODE >55:E:\InchNode\InchNode.X\ads1115.c
+E4D text47 CODE >56:E:\InchNode\InchNode.X\ads1115.c
+E4F text47 CODE >57:E:\InchNode\InchNode.X\ads1115.c
+E51 text47 CODE >58:E:\InchNode\InchNode.X\ads1115.c
+E53 text47 CODE >59:E:\InchNode\InchNode.X\ads1115.c
+E54 text47 CODE >34:E:\InchNode\InchNode.X\ads1115.c
+E54 text47 CODE >36:E:\InchNode\InchNode.X\ads1115.c
+E56 text47 CODE >37:E:\InchNode\InchNode.X\ads1115.c
+E57 text47 CODE >38:E:\InchNode\InchNode.X\ads1115.c
+E57 text47 CODE >40:E:\InchNode\InchNode.X\ads1115.c
+E59 text47 CODE >41:E:\InchNode\InchNode.X\ads1115.c
+E5C text47 CODE >43:E:\InchNode\InchNode.X\ads1115.c
+E5F text47 CODE >45:E:\InchNode\InchNode.X\ads1115.c
+E63 text47 CODE >46:E:\InchNode\InchNode.X\ads1115.c
+E64 text47 CODE >137:E:\InchNode\InchNode.X\ads1115.c
+E64 text47 CODE >139:E:\InchNode\InchNode.X\ads1115.c
+E66 text47 CODE >140:E:\InchNode\InchNode.X\ads1115.c
+E68 text47 CODE >141:E:\InchNode\InchNode.X\ads1115.c
+E6A text47 CODE >142:E:\InchNode\InchNode.X\ads1115.c
+E6C text47 CODE >143:E:\InchNode\InchNode.X\ads1115.c
+E6E text47 CODE >144:E:\InchNode\InchNode.X\ads1115.c
+E6F text47 CODE >69:E:\InchNode\InchNode.X\mcc_generated_files/mcc.c
+E6F text47 CODE >72:E:\InchNode\InchNode.X\mcc_generated_files/mcc.c
+E71 text47 CODE >73:E:\InchNode\InchNode.X\mcc_generated_files/mcc.c
+E73 text47 CODE >74:E:\InchNode\InchNode.X\mcc_generated_files/mcc.c
+E75 text47 CODE >75:E:\InchNode\InchNode.X\mcc_generated_files/mcc.c
+E77 text47 CODE >76:E:\InchNode\InchNode.X\mcc_generated_files/mcc.c
+E78 text47 CODE >79:E:\InchNode\InchNode.X\mcc_generated_files/mcc.c
+E78 text47 CODE >82:E:\InchNode\InchNode.X\mcc_generated_files/mcc.c
+E7B text47 CODE >84:E:\InchNode\InchNode.X\mcc_generated_files/mcc.c
+E7C text47 CODE >87:E:\InchNode\InchNode.X\mcc_generated_files/mcc.c
+E7D text47 CODE >51:E:\InchNode\InchNode.X\mcc_generated_files/pin_manager.c
+E7D text47 CODE >56:E:\InchNode\InchNode.X\mcc_generated_files/pin_manager.c
+E7F text47 CODE >61:E:\InchNode\InchNode.X\mcc_generated_files/pin_manager.c
+E82 text47 CODE >66:E:\InchNode\InchNode.X\mcc_generated_files/pin_manager.c
+E85 text47 CODE >71:E:\InchNode\InchNode.X\mcc_generated_files/pin_manager.c
+E88 text47 CODE >72:E:\InchNode\InchNode.X\mcc_generated_files/pin_manager.c
+E8A text47 CODE >78:E:\InchNode\InchNode.X\mcc_generated_files/pin_manager.c
+E8C text47 CODE >83:E:\InchNode\InchNode.X\mcc_generated_files/pin_manager.c
+E8D text47 CODE >89:E:\InchNode\InchNode.X\mcc_generated_files/mcc.c
+E8D text47 CODE >92:E:\InchNode\InchNode.X\mcc_generated_files/mcc.c
+E8F text47 CODE >93:E:\InchNode\InchNode.X\mcc_generated_files/mcc.c
+E90 text47 CODE >577:E:\InchNode\InchNode.X\main.c
+E90 text47 CODE >581:E:\InchNode\InchNode.X\main.c
+E91 text47 CODE >585:E:\InchNode\InchNode.X\main.c
+E95 text47 CODE >587:E:\InchNode\InchNode.X\main.c
+E97 text47 CODE >588:E:\InchNode\InchNode.X\main.c
+E98 text47 CODE >591:E:\InchNode\InchNode.X\main.c
+E9A text47 CODE >592:E:\InchNode\InchNode.X\main.c
+E9C text47 CODE >596:E:\InchNode\InchNode.X\main.c
+EA3 text47 CODE >599:E:\InchNode\InchNode.X\main.c
+EA6 text47 CODE >600:E:\InchNode\InchNode.X\main.c
+EA8 text47 CODE >601:E:\InchNode\InchNode.X\main.c
+EAC text47 CODE >602:E:\InchNode\InchNode.X\main.c
+EB0 text47 CODE >603:E:\InchNode\InchNode.X\main.c
+EB2 text47 CODE >605:E:\InchNode\InchNode.X\main.c
+EB3 text47 CODE >606:E:\InchNode\InchNode.X\main.c
+EB5 text47 CODE >615:E:\InchNode\InchNode.X\main.c
+EBC text47 CODE >617:E:\InchNode\InchNode.X\main.c
+ECD text47 CODE >618:E:\InchNode\InchNode.X\main.c
+ECF text47 CODE >622:E:\InchNode\InchNode.X\main.c
+ED0 text47 CODE >623:E:\InchNode\InchNode.X\main.c
+ED1 text47 CODE >581:E:\InchNode\InchNode.X\main.c
+EDF text47 CODE >625:E:\InchNode\InchNode.X\main.c
+EE0 text47 CODE >484:E:\InchNode\InchNode.X\main.c
+EE0 text47 CODE >486:E:\InchNode\InchNode.X\main.c
+EE3 text47 CODE >488:E:\InchNode\InchNode.X\main.c
+EE6 text47 CODE >490:E:\InchNode\InchNode.X\main.c
+EE7 text47 CODE >491:E:\InchNode\InchNode.X\main.c
+EF0 text47 CODE >486:E:\InchNode\InchNode.X\main.c
+EF1 text47 CODE >221:E:\InchNode\InchNode.X\ads1115.c
+EF1 text47 CODE >223:E:\InchNode\InchNode.X\ads1115.c
+EF3 text47 CODE >226:E:\InchNode\InchNode.X\ads1115.c
+EF4 text47 CODE >223:E:\InchNode\InchNode.X\ads1115.c
+EF5 text47 CODE >225:E:\InchNode\InchNode.X\ads1115.c
+EF7 text47 CODE >226:E:\InchNode\InchNode.X\ads1115.c
+EF9 text47 CODE >228:E:\InchNode\InchNode.X\ads1115.c
+FA3 text47 CODE >132:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FA4 text47 CODE >134:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FA7 text47 CODE >138:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FAA text47 CODE >140:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FAD text47 CODE >141:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FAE text47 CODE >142:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FAE text47 CODE >144:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FAF text47 CODE >145:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FB6 text47 CODE >146:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FB7 text47 CODE >145:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FB8 text47 CODE >146:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FBA text47 CODE >148:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FBB text47 CODE >150:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FBC text47 CODE >152:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FBE text47 CODE >153:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FBF text47 CODE >438:E:\InchNode\InchNode.X\ads1115.c
+FBF text47 CODE >447:E:\InchNode\InchNode.X\ads1115.c
+FC3 text47 CODE >450:E:\InchNode\InchNode.X\ads1115.c
+FC7 text47 CODE >456:E:\InchNode\InchNode.X\ads1115.c
+FC8 text47 CODE >459:E:\InchNode\InchNode.X\ads1115.c
+FD4 text47 CODE >75:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FD4 text47 CODE >78:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FD6 text47 CODE >79:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FD7 text47 CODE >84:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FDA text47 CODE >87:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FDC text47 CODE >90:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FDE text47 CODE >93:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FE0 text47 CODE >96:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FE1 text47 CODE >100:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FE2 text47 CODE >102:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FE3 text47 CODE >100:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FE4 text47 CODE >101:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FE5 text47 CODE >102:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FE6 text47 CODE >104:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FE7 text47 CODE >105:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FE8 text47 CODE >106:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FE9 text47 CODE >109:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FEB text47 CODE >110:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+FEC text47 CODE >64:E:\InchNode\InchNode.X\mcc_generated_files/tmr0.c
+FEC text47 CODE >69:E:\InchNode\InchNode.X\mcc_generated_files/tmr0.c
+FF0 text47 CODE >72:E:\InchNode\InchNode.X\mcc_generated_files/tmr0.c
+FF3 text47 CODE >75:E:\InchNode\InchNode.X\mcc_generated_files/tmr0.c
+FF4 text47 CODE >78:E:\InchNode\InchNode.X\mcc_generated_files/tmr0.c
+FF5 text47 CODE >81:E:\InchNode\InchNode.X\mcc_generated_files/tmr0.c
+FF6 text47 CODE >84:E:\InchNode\InchNode.X\mcc_generated_files/tmr0.c
+FFB text47 CODE >477:E:\InchNode\InchNode.X\main.c
+FFC text47 CODE >479:E:\InchNode\InchNode.X\main.c
+FFE text47 CODE >480:E:\InchNode\InchNode.X\main.c
+FFF text47 CODE >481:E:\InchNode\InchNode.X\main.c
+27 text2 CODE >508:E:\InchNode\InchNode.X\main.c
+27 text2 CODE >513:E:\InchNode\InchNode.X\main.c
+2A text2 CODE >515:E:\InchNode\InchNode.X\main.c
+35 text2 CODE >517:E:\InchNode\InchNode.X\main.c
+37 text2 CODE >519:E:\InchNode\InchNode.X\main.c
+3B text2 CODE >521:E:\InchNode\InchNode.X\main.c
+3C text2 CODE >522:E:\InchNode\InchNode.X\main.c
+3D text2 CODE >525:E:\InchNode\InchNode.X\main.c
+41 text2 CODE >527:E:\InchNode\InchNode.X\main.c
+44 text2 CODE >534:E:\InchNode\InchNode.X\main.c
+48 text2 CODE >536:E:\InchNode\InchNode.X\main.c
+49 text2 CODE >537:E:\InchNode\InchNode.X\main.c
+4B text2 CODE >540:E:\InchNode\InchNode.X\main.c
+4F text2 CODE >542:E:\InchNode\InchNode.X\main.c
+52 text2 CODE >543:E:\InchNode\InchNode.X\main.c
+53 text2 CODE >546:E:\InchNode\InchNode.X\main.c
+5B text2 CODE >548:E:\InchNode\InchNode.X\main.c
+5D text2 CODE >549:E:\InchNode\InchNode.X\main.c
+5E text2 CODE >554:E:\InchNode\InchNode.X\main.c
+61 text2 CODE >556:E:\InchNode\InchNode.X\main.c
+65 text2 CODE >564:E:\InchNode\InchNode.X\main.c
+66 text2 CODE >557:E:\InchNode\InchNode.X\main.c
+68 text2 CODE >564:E:\InchNode\InchNode.X\main.c
+71 text2 CODE >568:E:\InchNode\InchNode.X\main.c
+76 text2 CODE >497:E:\InchNode\InchNode.X\main.c
+76 text2 CODE >501:E:\InchNode\InchNode.X\main.c
+7A text2 CODE >503:E:\InchNode\InchNode.X\main.c
+7C text2 CODE >501:E:\InchNode\InchNode.X\main.c
+7D text2 CODE >112:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+7D text2 CODE >116:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+80 text2 CODE >120:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+87 text2 CODE >121:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+88 text2 CODE >120:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+89 text2 CODE >121:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+8B text2 CODE >123:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+8C text2 CODE >125:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+8E text2 CODE >126:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+90 text2 CODE >127:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+92 text2 CODE >129:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+93 text2 CODE >130:E:\InchNode\InchNode.X\mcc_generated_files/eusart.c
+94 text2 CODE >313:E:\InchNode\InchNode.X\main.c
+94 text2 CODE >315:E:\InchNode\InchNode.X\main.c
+95 text2 CODE >318:E:\InchNode\InchNode.X\main.c
+98 text2 CODE >320:E:\InchNode\InchNode.X\main.c
+9A text2 CODE >322:E:\InchNode\InchNode.X\main.c
+B7 text2 CODE >324:E:\InchNode\InchNode.X\main.c
+C7 text2 CODE >325:E:\InchNode\InchNode.X\main.c
+D5 text2 CODE >326:E:\InchNode\InchNode.X\main.c
+D6 text2 CODE >320:E:\InchNode\InchNode.X\main.c
+DB text2 CODE >331:E:\InchNode\InchNode.X\main.c
+DE text2 CODE >333:E:\InchNode\InchNode.X\main.c
+E0 text2 CODE >334:E:\InchNode\InchNode.X\main.c
+E1 text2 CODE >336:E:\InchNode\InchNode.X\main.c
+E4 text2 CODE >343:E:\InchNode\InchNode.X\main.c
+E7 text2 CODE >345:E:\InchNode\InchNode.X\main.c
+F2 text2 CODE >346:E:\InchNode\InchNode.X\main.c
+156 text2 CODE >349:E:\InchNode\InchNode.X\main.c
+157 text2 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+157 text2 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+158 text2 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+15A text2 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+165 text2 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+167 text2 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+167 text2 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+169 text2 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+174 text2 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+176 text2 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+17A text2 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+180 text2 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+181 text2 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+181 text2 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+182 text2 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+184 text2 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+188 text2 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+189 text2 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+18D text2 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+19D text2 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+1A5 text2 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+1A6 text2 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+1AA text2 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+1AC text2 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+1AF text2 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+1BA text2 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+1C2 text2 CODE >42:C:\Program Files (x86)\Microchip\xc8\v1.37\sources\common\aldiv.c
+2A6 clrtext CODE >2211:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+2A6 clrtext CODE >2212:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+2A7 clrtext CODE >2213:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+2A7 clrtext CODE >2214:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+2A8 clrtext CODE >2215:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+2A9 clrtext CODE >2216:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+2AA clrtext CODE >2217:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+2AB clrtext CODE >2218:C:\Users\Thinkpad\AppData\Local\Temp\sgj0.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 1 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_EUSART_Read FA 0 CODE 0 text2 dist/default/production\InchNode.X.production.obj
+__size_of_ChangeADS1115ValueToResitor 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+___lwmod@counter 7B 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+writeRegister@value 4E 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+__Hspace_0 8009 0 ABS 0 - -
+__Hspace_1 16C 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+EEpromBufferRead@pBuffer 76 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+_IIC_Delay_Half 1CA8 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_of_UartRecProcess EC 0 CODE 0 text2 dist/default/production\InchNode.X.production.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+LinearLookUpTab@Tab 64 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+LinearLookUpTab@ret 5F 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+LinearLookUpTab@val 58 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+PL2 1DF4 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+PL4 1E0C 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+PL6 1E1E 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+PL8 1E32 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+_RD CA8 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_WR CA9 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+ltemp0 7E 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+ltemp1 82 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+ltemp2 86 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+ltemp3 80 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__Lstringtext 0 0 ABS 0 stringtext -
+__end_of_WDT_Initialize 1D20 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+_SendDataToMainBoardStep 41 0 BANK0 1 bssBANK0 dist/default/production\InchNode.X.production.obj
+?_LinearLookUpTab 57 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+_Cali 1284 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+_LATA 10C 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_TMR0 15 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_WPUA 20C 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_WREN CAA 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\Thinkpad\AppData\Local\Temp\sgj0.obj
+_mack 1CC8 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+_main 11A0 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+btemp 7E 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+ltemp 7E 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+start 4A 0 CODE 0 init C:\Users\Thinkpad\AppData\Local\Temp\sgj0.obj
+__end_of_ChangeADS1115ValueToResitor 13DA 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+ttemp 7E 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__size_of_readADC_Differential_0_1_part1 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__size_of_readADC_Differential_0_1_part2 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+wtemp 7E 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__size_of_UartDriverRecBufferClr 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_EUSART_Write 1F46 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+_SendTmr 34 0 BANK0 1 bssBANK0 dist/default/production\InchNode.X.production.obj
+_TMR0_InterruptHandler 67 0 BANK0 1 nvBANK0 dist/default/production\InchNode.X.production.obj
+__size_of___aldiv 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__size_of_Cali 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__size_of_mack 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__size_of___lldiv 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__size_of___lwmod 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_ADCDelayCnt 28 0 BANK0 1 bssBANK0 dist/default/production\InchNode.X.production.obj
+readADC_Differential_0_1_part2@res 50 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+__end_of_TMR0_SetInterruptHandler 1662 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_of_LinearLookUpTab 116A 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+_ADC_Value 2A 0 BANK0 1 bssBANK0 dist/default/production\InchNode.X.production.obj
+?___lmul 70 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+?___wmul 70 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+_OPTION_REGbits 95 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__Hpa_nodes 0 0 ABS 0 pa_nodes -
+__end_of_EUSART_Initialize 1FD8 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+printf@c 61 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+printf@f 4A 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+ttemp0 7E 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+ttemp1 81 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+ttemp2 84 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+ttemp3 87 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+ttemp4 7F 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__end_of_IsCharOne 1CC8 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+TMR0_SetInterruptHandler@InterruptHandler 70 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+__size_of_IsCharOne 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+intlevel0 0 0 CODE 0 functab C:\Users\Thinkpad\AppData\Local\Temp\sgj0.obj
+intlevel1 0 0 CODE 0 functab C:\Users\Thinkpad\AppData\Local\Temp\sgj0.obj
+intlevel2 0 0 CODE 0 functab C:\Users\Thinkpad\AppData\Local\Temp\sgj0.obj
+intlevel3 0 0 CODE 0 functab C:\Users\Thinkpad\AppData\Local\Temp\sgj0.obj
+intlevel4 0 0 CODE 0 functab C:\Users\Thinkpad\AppData\Local\Temp\sgj0.obj
+intlevel5 0 0 CODE 0 functab C:\Users\Thinkpad\AppData\Local\Temp\sgj0.obj
+__end_of_IIC_Delay_Half 1CAE 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_of_BaseTimeTickISR 54C 0 CODE 0 text52 dist/default/production\InchNode.X.production.obj
+___aldiv@divisor 4A 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+wtemp1 80 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+wtemp2 82 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+wtemp3 84 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+wtemp4 86 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+wtemp5 88 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+wtemp6 7F 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+ChangeADS1115ValueToResitor@ADC_value 7C 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+EEpromBufferRead@ReadAddr 71 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+_UartSendBuf E0 0 BANK1 1 bssBANK1 dist/default/production\InchNode.X.production.obj
+_UartSendCnt 44 0 BANK0 1 bssBANK0 dist/default/production\InchNode.X.production.obj
+_CaliTabSize 3F 0 BANK0 1 bssBANK0 dist/default/production\InchNode.X.production.obj
+__size_of_EUSART_Write 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+___aldiv@sign 53 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+__end_of_EUSART_Transmit_ISR 4F0 0 CODE 0 text54 dist/default/production\InchNode.X.production.obj
+CaliTabSendProcess@i 66 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+_ads1015_init 1DE2 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_of_Update2CaliDatabase 160A 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+_IsCharOne 1CAE 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_of_SendDataToMainBoardProcess 1DC0 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+_eusartTxBuffer E8 0 BANK1 1 bssBANK1 dist/default/production\InchNode.X.production.obj
+__end_of_EraseCaliDatabase 1656 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+___wmul@multiplicand 72 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+printf@flag 5C 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+printf@prec 5B 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+_LinearLookUpTab 1002 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+_ANSELA 18C 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_APFCON 11D 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+writeRegister@i 7A 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+_TMR0_DefaultInterruptHandler 558 0 CODE 0 text53 dist/default/production\InchNode.X.production.obj
+printf@width 5F 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+_StopRom 1C66 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_of_INTERRUPT_InterruptManager 4A 0 CODE 0 intentry dist/default/production\InchNode.X.production.obj
+_CaliBuf A0 0 BANK1 1 bssBANK1 dist/default/production\InchNode.X.production.obj
+_CaliTab 128 0 BANK2 1 bssBANK2 dist/default/production\InchNode.X.production.obj
+__end_of___lmul 1334 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_of___wmul 1718 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_of_EUSART_Write 1F7E 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+?_SendToRom 74 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+_EECON1 195 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_EECON2 196 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_EEDATA 193 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_writeRegister 1B72 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__Lmaintext 0 0 ABS 0 maintext -
+?_printf 4A 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+__LnvBANK0 0 0 ABS 0 nvBANK0 -
+___lwmod@divisor 77 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+__end_of___aldiv 386 0 CODE 0 text2 dist/default/production\InchNode.X.production.obj
+_BaseTimeTickISR 538 0 CODE 0 text52 dist/default/production\InchNode.X.production.obj
+__end_of___lldiv 1458 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_of___lwdiv 19C0 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_of___lwmod 1A00 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__size_of_isdigit 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+eeprom_write@addr 71 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+__size_of_ReceiveFromRom 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__end_of_IIC_Delay 1C66 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__size_of_ads1015_init 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_OPTION_REG 95 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_dpowers 39E 0 STRCODE 0 stringtext dist/default/production\InchNode.X.production.obj
+__size_of_IIC_Delay 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_EUSART_Initialize 1FA8 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_of_readADC_Differential_0_1_part1 1FA8 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_of_readADC_Differential_0_1_part2 1A7A 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+_eeprom_read 1952 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+___lwdiv@quotient 74 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+__size_of_putch 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_Length 32 0 BANK0 1 bssBANK0 dist/default/production\InchNode.X.production.obj
+?_ChangeADS1115ValueToResitor 7C 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+___lwmod@dividend 79 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+_UartByteToBeSendCnt 42 0 BANK0 1 bssBANK0 dist/default/production\InchNode.X.production.obj
+___lldiv@counter 56 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+__CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_PIN_MANAGER_Initialize 1CFA 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+start_initialization 116A 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+_LedTimerCnt 30 0 BANK0 1 bssBANK0 dist/default/production\InchNode.X.production.obj
+_OSCCON 99 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_IIC_Delay 1C60 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+UpdateCaliBuf@tmp1 78 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+_TRISAbits 8C 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+___aldiv@quotient 54 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+___lldiv@dividend 4E 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+_ADCProcess 11E2 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_of_ads1015_init 1DF4 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+_eusartRxBuffer 120 0 BANK2 1 bssBANK2 dist/default/production\InchNode.X.production.obj
+Cali@InData 7C 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+_ADCStep 3D 0 BANK0 1 bssBANK0 dist/default/production\InchNode.X.production.obj
+_readRegister 1AD0 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_ofPL2 1E0C 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_ofPL4 1E1E 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_ofPL6 1E32 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_ofPL8 1E4E 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_of_SYSTEM_Initialize 1CF0 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+readRegister@i 4C 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+clear_ram0 54C 0 CODE 0 clrtext dist/default/production\InchNode.X.production.obj
+_SPBRGH 19C 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_SPBRGL 19B 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__pcstackBANK0 4A 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+EEpromBuffeWirte@WriteAddr 72 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+_EraseCaliDatabase 163E 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_of_CaliTabSendProcess 16EE 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_of_printf 18BE 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+ConstructCaliTab@i 64 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+ConstructCaliTab@j 65 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+__size_of_LinearLookUpTab 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_isdigit$834 70 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+_WDTCON 97 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\Thinkpad\AppData\Local\Temp\sgj0.obj
+__end_of_EUSART_Read 128 0 CODE 0 text2 dist/default/production\InchNode.X.production.obj
+Update2CaliDatabase@tmp 52 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 BANK3 1 bank3 -
+__Hbank4 0 0 BANK4 1 bank4 -
+__Hbank5 0 0 BANK5 1 bank5 -
+__Hbank6 0 0 BANK6 1 bank6 -
+__Hbank7 0 0 BANK7 1 bank7 -
+__Hbank8 0 0 BANK8 1 bank8 -
+__Hbank9 0 0 BANK9 1 bank9 -
+__Hcinit 0 0 CODE 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hstack 0 0 STACK 2 stack -
+___lwdiv@counter 76 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+__Hbank10 0 0 BANK10 1 bank10 -
+__Hbank11 0 0 BANK11 1 bank11 -
+__Hbank12 0 0 BANK12 1 bank12 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Hbank15 0 0 BANK15 1 bank15 -
+__Hbank16 0 0 BANK16 1 bank16 -
+__Hbank17 0 0 BANK17 1 bank17 -
+__Hbank18 0 0 BANK18 1 bank18 -
+__Hbank19 0 0 BANK19 1 bank19 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+__CFG_FOSC$INTOSC 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+Update2CaliDatabase@i 59 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+Update2CaliDatabase@j 5B 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+Update2CaliDatabase@k 58 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+Update2CaliDatabase@m 5A 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10012 0 CONFIG 0 config -
+__size_of_writeRegister 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__size_of_readRegister 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__size_of_BaseTimeTickISR 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 BANK3 1 bank3 -
+__Lbank4 0 0 BANK4 1 bank4 -
+__Lbank5 0 0 BANK5 1 bank5 -
+__Lbank6 0 0 BANK6 1 bank6 -
+__Lbank7 0 0 BANK7 1 bank7 -
+__Lbank8 0 0 BANK8 1 bank8 -
+__Lbank9 0 0 BANK9 1 bank9 -
+__end_of_isdigit 18DE 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__Lcinit 0 0 CODE 0 cinit -
+_UartDriverRecBufferClr EC 0 CODE 0 text2 dist/default/production\InchNode.X.production.obj
+__Lidloc 0 0 IDLOC 0 idloc -
+__size_of_StartRom 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lstack 0 0 STACK 2 stack -
+_m_bitShift 36 0 BANK0 1 bssBANK0 dist/default/production\InchNode.X.production.obj
+__size_of_SendDataToMainBoardProcess 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_CaliTabSendProcess 1662 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__size_of_UartRecProcess 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_PORTAbits C 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_INTCONbits B 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 4A 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 4A 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+__end_of_ADCProcess 1284 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__pnvBANK0 67 0 BANK0 1 nvBANK0 dist/default/production\InchNode.X.production.obj
+_m_i2cAddress 3A 0 BANK0 1 bssBANK0 dist/default/production\InchNode.X.production.obj
+___lmul 12EA 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+___wmul 16EE 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+int$flags 7E 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__size_of_INTERRUPT_InterruptManager 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__size_of_WDT_Initialize 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_UpdateCaliBuf 18DE 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+PL10 1E4E 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+PL12 1E68 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+PL14 1E80 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+PL16 1E8C 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+PL18 1E98 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+PL20 1EB0 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+PL22 1EBC 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+PL24 1EC6 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+PL26 1ED0 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+PL28 1EE2 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+PL30 1EEC 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+PL32 1EF8 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+PL34 1F08 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+PL36 1F14 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+PL38 1F20 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+PL40 386 0 CODE 0 text2 dist/default/production\InchNode.X.production.obj
+PL42 1F2E 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+PL44 392 0 CODE 0 text2 dist/default/production\InchNode.X.production.obj
+PL46 1F3A 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+_GIE 5F 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__S0 8009 0 ABS 0 - -
+__S1 16C 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__size_of_TMR0_ISR 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__size_of_TMR0_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__end_of_readRegister 1B72 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_of_writeRegister 1BF2 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+_ChangeADS1115ValueToResitor 1334 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_of_TMR0_DefaultInterruptHandler 55A 0 CODE 0 text53 dist/default/production\InchNode.X.production.obj
+_readADC_Differential_0_1_part1 1F7E 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+_readADC_Differential_0_1_part2 1A38 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+EEpromBufferRead@i 77 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+__end_of_EUSART_Receive_ISR 51C 0 CODE 0 text55 dist/default/production\InchNode.X.production.obj
+LinearLookUpTab@TabSiz 57 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+_SYSTEM_Initialize 1CDE 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_ofPL10 1E68 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_ofPL12 1E80 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_ofPL14 1E8C 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_ofPL16 1E98 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_ofPL18 1EB0 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_ofPL20 1EBC 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_ofPL22 1EC6 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_ofPL24 1ED0 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_ofPL26 1EE2 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_ofPL28 1EEC 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_ofPL30 1EF8 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_ofPL32 1F08 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_ofPL34 1F14 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_ofPL36 1F20 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_ofPL38 1F2E 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_ofPL40 392 0 CODE 0 text2 dist/default/production\InchNode.X.production.obj
+__end_ofPL42 1F3A 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_ofPL44 39E 0 CODE 0 text2 dist/default/production\InchNode.X.production.obj
+__end_ofPL46 1F46 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+?_readRegister 7A 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_CaliTabSendProcess$1116 62 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+_CaliTabSendProcess$1117 64 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+eeprom_write@value 70 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+Update2CaliDatabase@ori_val 4A 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+__HnvBANK0 0 0 ABS 0 nvBANK0 -
+__Lintentry 8 0 CODE 0 intentry -
+___lldiv@divisor 4A 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+_SendDataToMainBoardProcess 1D20 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Thinkpad\AppData\Local\Temp\sgj0.obj
+EUSART_Read@readValue 70 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+_eeprom_write 1A00 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+_EEpromBuffeWirte 160A 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+_StartRom 1C84 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+EEpromBuffeWirte@pBuffer 77 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+__size_of_IIC_Delay_Half 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+Update2CaliDatabase@ActualValue 4C 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+_EEpromBufferRead 1920 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__size_of___lmul 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__size_of___wmul 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+writeRegister@i2cAddress 4A 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+__LbssBANK2 0 0 ABS 0 bssBANK2 -
+__CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_INTERRUPT_InterruptManager 8 0 CODE 0 intentry dist/default/production\InchNode.X.production.obj
+_RCSTAbits 19D 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_PIE1bits 91 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__end_of_StartRom 1CA8 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+SendToRom@data 74 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+_m_gain 38 0 BANK0 1 bssBANK0 dist/default/production\InchNode.X.production.obj
+_TMR0_ISR 51C 0 CODE 0 text51 dist/default/production\InchNode.X.production.obj
+__ptext10 1D1A 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext11 1FD8 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext12 1656 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext13 1CFA 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext14 1CF0 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext15 1FA8 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext16 1662 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext17 1718 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext18 18BE 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext19 1F46 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext20 18C2 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext21 16EE 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext22 11E2 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext23 1A38 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext24 1AD0 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext25 1CC8 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext26 1A7A 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext27 1F7E 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext28 1B72 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext29 1C66 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext30 1C84 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext31 1BF2 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext32 1CAE 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext33 1CA8 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext34 1C60 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext35 1DE2 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext36 1458 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext37 19C0 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext38 1976 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext39 18DE 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext40 1920 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext41 1952 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext42 163E 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext43 160A 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext44 1A00 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext45 1334 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext46 1284 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext47 1002 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext48 12EA 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext49 13DA 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext51 51C 0 CODE 0 text51 dist/default/production\InchNode.X.production.obj
+__ptext52 538 0 CODE 0 text52 dist/default/production\InchNode.X.production.obj
+__ptext53 558 0 CODE 0 text53 dist/default/production\InchNode.X.production.obj
+__ptext54 4C4 0 CODE 0 text54 dist/default/production\InchNode.X.production.obj
+__ptext55 4F0 0 CODE 0 text55 dist/default/production\InchNode.X.production.obj
+_EUSART_Receive_ISR 4F0 0 CODE 0 text55 dist/default/production\InchNode.X.production.obj
+EEpromBuffeWirte@i 78 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+?_readADC_Differential_0_1_part2 4E 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+__end_of_PIN_MANAGER_Initialize 1D1A 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+___aldiv 2AE 0 CODE 0 text2 dist/default/production\InchNode.X.production.obj
+__end_of_TMR0_Initialize 1FF6 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+_BAUDCON 19F 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+___lldiv 13DA 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+___lwdiv 1976 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+___lwmod 19C0 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__Lbank10 0 0 BANK10 1 bank10 -
+__Lbank11 0 0 BANK11 1 bank11 -
+__Lbank12 0 0 BANK12 1 bank12 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__pmaintext 11A0 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__Lbigram 0 0 ABS 0 bigram -
+__CFG_BORV$LO 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+___lmul@multiplier 70 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+readRegister@i2cAddress 7A 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+?_Cali 7C 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 1000E 0 CONFIG 0 config -
+_printf 1718 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__CFG_IESO$ON 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__end_of_TMR0_ISR 538 0 CODE 0 text51 dist/default/production\InchNode.X.production.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+___wmul@multiplier 70 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+_LATAbits 10C 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__end_of_SendToRom 1C60 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_of_UartSendProcess 1DE2 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+_ConstructCaliTab 128 0 CODE 0 text2 dist/default/production\InchNode.X.production.obj
+IsCharOne@retcode 72 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+__size_of_SendToRom 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__size_of_StopRom 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+ReceiveFromRom@count 78 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+ChangeADS1115ValueToResitor@tmp 5B 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+___lwdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+__size_of_eeprom_write 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_TMR0_SetInterruptHandler 1656 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+_CalibratingFlag 40 0 BANK0 1 bssBANK0 dist/default/production\InchNode.X.production.obj
+_ActualLength 2E 0 BANK0 1 bssBANK0 dist/default/production\InchNode.X.production.obj
+__size_of_EUSART_Read 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+stackhi 204F 0 ABS 0 - C:\Users\Thinkpad\AppData\Local\Temp\sgj0.obj
+stacklo 204B 0 ABS 0 - C:\Users\Thinkpad\AppData\Local\Temp\sgj0.obj
+LinearLookUpTab@i 63 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+__size_of_UpdateCaliBuf 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_OSCTUNE 98 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__end_of_eeprom_read 1976 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_SendToRom 1BF2 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+?_IsCharOne 70 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+_ReceiveFromRom 1A7A 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+UartSend@SendNum 70 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+readRegister@reg 7C 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+readRegister@ret 4A 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+_PIR1bits 11 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__Lend_init 4A 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+EraseCaliDatabase@i 72 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+__end_of_eeprom_write 1A38 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+printf@ap 5A 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+end_of_initialization 119A 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+_TMR0_Initialize 1FD8 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__size_of_UartSend 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__Hintentry 4A 0 CODE 0 intentry -
+readADC_Differential_0_1_part1@config 7C 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__size_of_printf 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__end_of_EEpromBuffeWirte 163E 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__Lstrings 0 0 ABS 0 strings -
+?___aldiv 4A 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+___lwdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+?___lldiv 4A 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+__end_of_UartDriverRecBufferClr FA 0 CODE 0 text2 dist/default/production\InchNode.X.production.obj
+?___lwdiv 70 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+?___lwmod 77 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+__end_of_EEpromBufferRead 1952 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+_UartRecBuf 20 0 BANK0 1 bssBANK0 dist/default/production\InchNode.X.production.obj
+_UartRecCnt 43 0 BANK0 1 bssBANK0 dist/default/production\InchNode.X.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__HbssBANK2 0 0 ABS 0 bssBANK2 -
+_UartSendProcess 1DC0 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_of_UpdateCaliBuf 1920 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__size_of_EEpromBuffeWirte 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+UpdateCaliBuf@i 7C 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+__size_of_EEpromBufferRead 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__ptext1 1DC0 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext2 4E 0 CODE 0 text2 dist/default/production\InchNode.X.production.obj
+__ptext3 EC 0 CODE 0 text2 dist/default/production\InchNode.X.production.obj
+__ptext4 FA 0 CODE 0 text2 dist/default/production\InchNode.X.production.obj
+__ptext5 128 0 CODE 0 text2 dist/default/production\InchNode.X.production.obj
+__ptext6 2AE 0 CODE 0 text2 dist/default/production\InchNode.X.production.obj
+__ptext7 1D20 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext8 1FF6 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__ptext9 1CDE 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+_eusartTxBufferRemaining 69 0 BANK0 1 nvBANK0 dist/default/production\InchNode.X.production.obj
+__size_of_ADCProcess 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+SendToRom@count 78 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+___aldiv@dividend 4E 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__pstringtext 39E 0 STRCODE 0 stringtext dist/default/production\InchNode.X.production.obj
+_isdigit 18C2 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__size_of_CaliTabSendProcess 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__end_of_ConstructCaliTab 2AE 0 CODE 0 text2 dist/default/production\InchNode.X.production.obj
+__end_of_ReceiveFromRom 1AD0 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+SendToRom@retcode 76 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+__CFG_CLKOUTEN$OFF 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+EUSART_Write@txData 70 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+__end_of__initialization 119A 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_of_StopRom 1C84 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__Lfunctab 0 0 CODE 0 functab -
+__size_of_ConstructCaliTab 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_timer0ReloadVal 6A 0 BANK0 1 nvBANK0 dist/default/production\InchNode.X.production.obj
+?_ReceiveFromRom 74 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+_UartSend 1FF6 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+_eusartRxCount 45 0 BANK0 1 bssBANK0 dist/default/production\InchNode.X.production.obj
+__size_of_EUSART_Transmit_ISR 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext -
+__CFG_PLLEN$OFF 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+___lmul@product 78 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+__size_of_Update2CaliDatabase 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__size_of_EUSART_Initialize 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+___lmul@multiplicand 74 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+___lldiv@quotient 52 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+__end_of_UartSend 2000 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+Update2CaliDatabase@OriginalValue 56 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+ReceiveFromRom@m 76 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+__Hend_init 4E 0 CODE 0 end_init -
+__size_of_TMR0_SetInterruptHandler 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+___aldiv@counter 52 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+_CaliTabSendFlag 3E 0 BANK0 1 bssBANK0 dist/default/production\InchNode.X.production.obj
+putch@txData 71 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+__end_of_Cali 12EA 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_of_mack 1CDE 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__end_of_main 11E2 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+_UartRecProcess 4E 0 CODE 0 text2 dist/default/production\InchNode.X.production.obj
+isdigit@c 71 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+printf@val 5D 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+_CARRY 18 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__end_of_dpowers 3B2 0 STRCODE 0 stringtext dist/default/production\InchNode.X.production.obj
+_EEADR 191 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__Lpa_nodes 0 0 ABS 0 pa_nodes -
+_RCREG 199 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_RCSTA 19D 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_TRISA 8C 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_TXREG 19A 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_TXSTA 19E 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__end_of_putch 18C2 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__size_of_TMR0_Initialize 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_putch 18BE 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+SendDataToMainBoardProcess@SendCount 3C 0 BANK0 1 bssBANK0 dist/default/production\InchNode.X.production.obj
+eeprom_read@addr 70 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+__size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_WDT_Initialize 1D1A 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+EEpromBuffeWirte@NumByteToWrite 73 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+__pintentry 8 0 CODE 0 intentry dist/default/production\InchNode.X.production.obj
+__end_of_OSCILLATOR_Initialize 1CFA 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__size_of_UartSendProcess 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_ADLinearVal 2C 0 BANK0 1 bssBANK0 dist/default/production\InchNode.X.production.obj
+__initialization 116A 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__size_of_EraseCaliDatabase 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+__size_of_eeprom_read 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+writeRegister@reg 4C 0 BANK0 1 cstackBANK0 dist/default/production\InchNode.X.production.obj
+__pbssBANK0 20 0 BANK0 1 bssBANK0 dist/default/production\InchNode.X.production.obj
+__pbssBANK1 A0 0 BANK1 1 bssBANK1 dist/default/production\InchNode.X.production.obj
+__pbssBANK2 120 0 BANK2 1 bssBANK2 dist/default/production\InchNode.X.production.obj
+__Hstringtext 0 0 ABS 0 stringtext -
+_EUSART_Transmit_ISR 4C4 0 CODE 0 text54 dist/default/production\InchNode.X.production.obj
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_eusartRxHead 46 0 BANK0 1 bssBANK0 dist/default/production\InchNode.X.production.obj
+_eusartRxTail 47 0 BANK0 1 bssBANK0 dist/default/production\InchNode.X.production.obj
+___wmul@product 74 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+__size_of_EUSART_Receive_ISR 0 0 ABS 0 - dist/default/production\InchNode.X.production.obj
+_Update2CaliDatabase 1458 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+_eusartTxHead 48 0 BANK0 1 bssBANK0 dist/default/production\InchNode.X.production.obj
+_eusartTxTail 49 0 BANK0 1 bssBANK0 dist/default/production\InchNode.X.production.obj
+EEpromBufferRead@NumByteToRead 72 0 COMMON 1 cstackCOMMON dist/default/production\InchNode.X.production.obj
+_OSCILLATOR_Initialize 1CF0 0 CODE 0 text47 dist/default/production\InchNode.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text47 0 801 1002 7FF 2
+text54 0 262 4C4 4B 2
+cstackCOMMON 1 70 70 E 1
+intentry 0 4 8 1CB 2
+reset_vec 0 0 0 2 2
+bssBANK0 1 20 20 4B 1
+bssBANK1 1 A0 A0 50 1
+bssBANK2 1 120 120 4C 1
+stringtext 0 1CF 39E 93 2
+config 0 8007 1000E 2 2
